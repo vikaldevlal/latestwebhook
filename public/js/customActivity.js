@@ -115,6 +115,7 @@ function(Interaction) {
 			                "journeyCouponCode": journeyCouponCode,
 		                        "eventDefinitionKey": eventDefinitionKey,
 		                        "journeyName": journeyName,
+					"ActivityId":"{{Activity.Id}}",
 			                "JourneyDefinitionInstanceId": "{{Context.DefinitionInstanceId}}",
 		                        "JourneyDefinitionId": "{{Context.DefinitionId}}",
 		                        "JourneyPublicationId": "{{Context.PublicationId}}",
