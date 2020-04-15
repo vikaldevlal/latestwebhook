@@ -83,6 +83,18 @@ function(eventDefinitionModel) {
     }
 
 });	
+	
+	connection.trigger('requestInteraction');
+	
+	connection.on('requestedInteraction',
+function(Interaction) {
+    if(Interaction){
+        /*If you want to see all*/
+        console.log('Interaction : '+JSON.stringify(Interaction));
+    }
+
+});
+	
 
     function save() {
 
