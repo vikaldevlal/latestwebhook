@@ -184,7 +184,7 @@ exports.execute = function (req, res) {
 		console.log("DEC Email : " + decodedArgs.emailAddress);
 		console.log("DEC FirstName : " + decodedArgs.FirstName);
 		console.log("DEC Region : " + decodedArgs.region);
-		console.log("DEC Segment : " + decodedArgs.segment);
+		console.log("DEC ActivityId : " + decodedArgs.ActivityId);
 		console.log("DEC Event FirstName : " + decodedArgs.EventFirstName);
 		console.log("DEC Event journeyCouponCode : " + decodedArgs.journeyCouponCode);
 		var journeyCouponCode=decodedArgs.journeyCouponCode;
@@ -192,6 +192,7 @@ exports.execute = function (req, res) {
 		var contactLastName=decodedArgs.EventLastName;
 		var ContactKey=decodedArgs.ContactKey;
 		var JourneyDefinitionId=decodedArgs.JourneyDefinitionId;
+		
 		var journeyName=decodedArgs.journeyName;
 		var eventDefinitionKey=decodedArgs.eventDefinitionKey;
 		var CustomObjectKey=decodedArgs.CustomObjectKey;
