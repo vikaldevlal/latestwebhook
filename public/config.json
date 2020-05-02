@@ -20,7 +20,9 @@
 					"ContactKey":"{{Contact.Key}"
 				}									
 			],
-          "outArguments": [],
+          "outArguments": [{
+					"CouponCode":""
+				}],
           "url": "https://latestwebhook.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
