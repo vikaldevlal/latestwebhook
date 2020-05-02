@@ -204,7 +204,8 @@ exports.execute = function (req, res) {
 				 eventDefinitionKey,CustomObjectKey,JourneyDefinitionInstanceId,JourneyPublicationId,JourneyVersionNumber, res);
 	
 	       logData(req);
-            res.send(200, 'Execute');
+            //res.send(200, 'Execute');
+		res.send( 200, {"CouponCode": journeyCouponCode} );
         } else {
             console.error('inArguments invalid.');
             return res.status(400).end();
