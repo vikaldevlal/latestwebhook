@@ -117,6 +117,7 @@ function(Interaction) {
 		                        "journeyName": journeyName,
 					"ActivityId":"{{Activity.Id}}",
 			                "JourneyDefinitionInstanceId": "{{Context.DefinitionInstanceId}}",
+		 			"JourneyDefinitionmid": "{{Context.mid}}",
 		                        "JourneyDefinitionId": "{{Context.DefinitionId}}",
 		                        "JourneyPublicationId": "{{Context.PublicationId}}",
 		                        "JourneyVersionNumber": "{{Context.VersionNumber}}"
