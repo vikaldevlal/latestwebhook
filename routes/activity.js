@@ -187,6 +187,8 @@ exports.execute = function (req, res) {
 		console.log("DEC ActivityId : " + decodedArgs.ActivityId);
 		console.log("DEC Event FirstName : " + decodedArgs.EventFirstName);
 		console.log("DEC Event journeyCouponCode : " + decodedArgs.journeyCouponCode);
+		console.log("DEC Event JourneyDefinitionmid : " + decodedArgs.JourneyDefinitionmid);
+	
 		var journeyCouponCode=decodedArgs.journeyCouponCode;
 		var contactFirstName=decodedArgs.EventFirstName;
 		var contactLastName=decodedArgs.EventLastName;
