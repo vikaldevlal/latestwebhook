@@ -66,6 +66,7 @@ function logData(req) {
 function getConnection()
 {
 var conData = {
+    'grant_type': 'client_credentials',		
     'clientId': process.env.CLIENT_ID,
     'clientSecret': process.env.CLIENT_SECRET  
   	}
