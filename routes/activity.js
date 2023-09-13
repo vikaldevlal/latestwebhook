@@ -80,7 +80,7 @@ var conData = {
 	})
 	  .then(function(response) {
 		//responsefromWeb.send('Authorization Sent');
-	  		token = response.data.accessToken;
+	  		token = response.access_token;
 }).catch(function (error) {
 	    console.log(error);
 	    //responsefromWeb.send(error);
