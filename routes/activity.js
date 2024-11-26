@@ -75,7 +75,7 @@ var conData = {
 	  url:process.env.AUTHENDPOINT,
 	  data: conData,
 	  headers:{
-       'Content-Type': 'application/json',
+       'Content-Type': 'application/x-www-form-urlencoded',
 	  }
 	})
 	  .then(function(response) {
