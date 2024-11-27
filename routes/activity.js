@@ -245,7 +245,7 @@ exports.validate = function (req, res) {
  */
 exports.connecttoMC = function (req, responsefromWeb) {
     // Data from the req and put it in an array accessible to the main app.	
-    
+    console.log('Inside connecttoMC Method:: ');
     var conData = {
 	   'grant_type': 'client_credentials',	 
     'clientId': process.env.CLIENT_ID,
