@@ -256,13 +256,13 @@ exports.connecttoMC = function (req, responsefromWeb) {
 	  url:process.env.AUTHENDPOINT,
 	  data: conData,
 	  headers:{
-       'Content-Type': 'application/x-www-form-urlencoded',
+       'content-type': 'application/x-www-form-urlencoded'
 	  }
 	})
 	  .then(function(response) {
 		responsefromWeb.send('Authorization Sent');
 	  		//responsefromWeb.status(200).send('connecttoMC');
-	  		token = response.data.accessToken;
+	  		token = response.data.access_token;
 		console.log('token : '+token);
 	  	
 	}).catch(function (error) {
