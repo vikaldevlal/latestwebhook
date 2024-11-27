@@ -247,6 +247,7 @@ exports.connecttoMC = function (req, responsefromWeb) {
     // Data from the req and put it in an array accessible to the main app.	
     
     var conData = {
+	   'grant_type': 'client_credentials',	 
     'clientId': process.env.CLIENT_ID,
     'clientSecret': process.env.CLIENT_SECRET  
   	}
