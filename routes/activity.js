@@ -73,10 +73,7 @@ var conData = {
 	axios({
 	  method:'post',
 	  url:process.env.AUTHENDPOINT,
-	  data: conData,
-	  headers:{
-       'Content-Type': 'application/x-www-form-urlencoded',
-	  }
+	  data: conData
 	})
 	  .then(function(response) {
 		//responsefromWeb.send('Authorization Sent');
