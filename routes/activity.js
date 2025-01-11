@@ -251,10 +251,7 @@ exports.connecttoMC = function (req, responsefromWeb) {
 	axios({
 	  method:'post',
 	  url:process.env.AUTHENDPOINT,
-	  data: conData,
-	  headers:{
-       'content-type': 'application/x-www-form-urlencoded'
-	  }
+	  data: conData
 	})
 	  .then(function(response) {
 		responsefromWeb.send('Authorization Sent');
